@@ -2,7 +2,7 @@
 //  BaseViewController.swift
 //  FBTSwift
 //
-//  Created by fengbaitong on 2017/5/24.
+//  Created by fengbaitong on 2017/5/26.
 //  Copyright © 2017年 fbt. All rights reserved.
 //
 
@@ -12,7 +12,7 @@ class BaseViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.white
+        self.view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
     }
 

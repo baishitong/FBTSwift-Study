@@ -58,6 +58,9 @@ class DataViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.title = "基本的语法调用附加单例的创建"
+        
         view.backgroundColor = UIColor.white
         let explicitDouble:Double = 70
         print(explicitDouble)
@@ -242,6 +245,13 @@ class DataViewController: BaseViewController {
         var possibleInteger:OptionalValue<Int> = .None
         possibleInteger = .Some(100)
         print(possibleInteger)
+        
+        // MARK: 单例
+        let manage =  ShareManager.instance
+        let manage1 = ShareManager.instance
+        let manage2 = ShareManager.instance
+        let manage3 = ShareManager.instance
+        print("manage:\(manage) manage1:\(manage1) manage2:\(manage2) manage3:\(manage3)")
         
     }
     

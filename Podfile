@@ -6,6 +6,7 @@ target 'FBTSwift' do
   use_frameworks!
 
   # Pods for FBTSwift
+
   pod ‘SnapKit’
- 
+  pod ‘Alamofire’
 end

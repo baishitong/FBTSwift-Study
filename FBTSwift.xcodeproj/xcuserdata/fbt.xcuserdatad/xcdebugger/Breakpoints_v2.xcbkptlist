@@ -67,53 +67,5 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTSwift/03.VideoPlay&#x89c6;&#x9891;&#x64ad;&#x653e;/VideoPlayVC.swift"
-            timestampString = "517392986.234725"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
-            landmarkName = "tableView(_:cellForRowAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FBTSwift.VideoPlayVC.tableView (__ObjC.UITableView, cellForRowAt : Foundation.IndexPath) -&gt; __ObjC.UITableViewCell"
-                  moduleName = "FBTSwift"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fbt/Desktop/FBTSwift/FBTSwift/03.VideoPlay%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE/VideoPlayVC.swift"
-                  timestampString = "517402208.538624"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "42"
-                  endingLineNumber = "42"
-                  offsetFromSymbolStart = "507">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FBTSwift.VideoPlayVC.(tableView (__ObjC.UITableView, cellForRowAt : Foundation.IndexPath) -&gt; __ObjC.UITableViewCell).(closure #1)"
-                  moduleName = "FBTSwift"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/fbt/Desktop/FBTSwift/FBTSwift/03.VideoPlay%E8%A7%86%E9%A2%91%E6%92%AD%E6%94%BE/VideoPlayVC.swift"
-                  timestampString = "517402208.54114"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "44"
-                  endingLineNumber = "44"
-                  offsetFromSymbolStart = "15">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

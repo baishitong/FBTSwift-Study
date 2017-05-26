@@ -13,7 +13,12 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     let dataArray: [String] = ["1：基本的语法调用",
                                "2：tableView简单用法",
                                "3：调用系统视频播放器",
-                               "4：scrollView"]
+                               "4：scrollView",
+                               "5：tableView系统的自适应高度",
+                               "6：tableView刷新",
+                               "7：collectionView的基本使用",
+                               "8：代理传值",
+                               "9：SnapKit的使用"]
     
     let tableView = UITableView()
     
@@ -61,6 +66,21 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         case 3:
             let scrollViewVC = ScrollViewVC()
             self.navigationController?.pushViewController(scrollViewVC, animated: true)
+        case 4:
+            let tableHeight = TableViewRowHeightVC()
+            self.navigationController?.pushViewController(tableHeight, animated: true)
+        case 5:
+            let tableRefresh = TableViewPullVC()
+              self.navigationController?.pushViewController(tableRefresh, animated: true)
+        case 6:
+            let collectionVC = CollectionViewVC()
+            self.navigationController?.pushViewController(collectionVC, animated: true)
+        case 7:
+            let DelegateVC = DeleagteOneVC()
+            self.navigationController?.pushViewController(DelegateVC, animated: true)
+        case 8:
+            let snapKitVC = SnapKitVC()
+            self.navigationController?.pushViewController(snapKitVC, animated: true)
         default:
             print("暂无")
         }
