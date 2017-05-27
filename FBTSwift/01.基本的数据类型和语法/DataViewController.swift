@@ -41,6 +41,13 @@ class DataViewController: BaseViewController {
         }
     }
     
+    // 申明User结构体
+    struct User {
+        
+        var ID: Int
+        var age: Int
+    }
+    
     // protocol 声明协议 类、枚举和结构体都可以实现协议。
     
 //    protocol ExampleProtocol {
@@ -230,7 +237,14 @@ class DataViewController: BaseViewController {
         // MARK: 结构体？
         let threeOfSpades = Card(rank: .Three)
         print(threeOfSpades,"一知半解")
-        
+        var user = User(ID: 660303, age: 20)
+        print("ID = \(user.ID) age = \(user.age)")
+        let userPointer = withUnsafePointer(to: &user, {$0})
+        // 1.打印user指针的值
+        print(userPointer.pointee)
+        // 3.获取user age的指针
+        let agePointer = userPointer.advanced(by: 1)
+        print(agePointer);
         
         // MARK: 协议初看
 //        let a = SimpleClass()
@@ -240,7 +254,7 @@ class DataViewController: BaseViewController {
 //        
         
         // MARK: 泛型
-       print(repeatItem(repeating: "knock", numberOfTimes: 4))
+        print(repeatItem(repeating: "knock", numberOfTimes: 4))
 //        “ 重新实现 Swift 标准库中的可选类型”
         var possibleInteger:OptionalValue<Int> = .None
         possibleInteger = .Some(100)
@@ -253,8 +267,106 @@ class DataViewController: BaseViewController {
         let manage3 = ShareManager.instance
         print("manage:\(manage) manage1:\(manage1) manage2:\(manage2) manage3:\(manage3)")
         
+        
+        
+        let sex = 0 //0是男 1是女
+        // case穿透
+        switch sex {
+        case 0:
+            print("男")
+            fallthrough
+        case 1:
+            fallthrough
+            print("女")
+        case 2:
+            print("你向下传递几次")
+        default:
+            print("你是人妖")
+        }
+        switch sex {
+        case 0, 1:
+            print("男和女")
+        default:
+            print("你是人妖")
+        }
+        
+        //switch 浮点型
+        let a = 3.14
+        switch a {
+        case 3.14:
+            print("打印浮点型")
+        default:
+            print("oo")
+        }
+        
+        //switch 字符串
+        let mFBT = 20
+        let nFBT = 30
+        var resultFBT :Int 
+        
+        let operation = "+"
+        switch operation {
+        case "+":
+            resultFBT = mFBT + nFBT
+            print(resultFBT)
+        case "-":
+            resultFBT = mFBT - nFBT
+            print(resultFBT)
+        default:
+            print("字符错误")
+        }
+        
+        // MARK: Switch 判断区间
+        let score = 88
+        switch score {
+        case 0..<60:
+            print("不及格")
+        case 60..<80:
+            print("及格")
+        case 80...100:
+            print("优秀")
+        default:
+            print("这个可以有")
+        }
+        // MARK: for 区间
+        for i in 0..<10 {
+            print(i)
+        }
+        for i in 0...10 {
+            print(i,"到10")
+        }
+        
+//        for _ in 0...9 {
+//            print("你没有用到标识符")
+//        }
+        
+        
+        for _ in 0...9 {
+        
+            print("你没有用到标识符")
+        }
+        let age = 45
+        online(age: age)
     }
     
+    
+    func online(age:Int) {
+        
+        guard age >= 18 else {
+            print("回家找妈妈")
+            return
+        }
+        guard age <= 40 else {
+            print("年轻人事业")
+            return
+        }
+        guard age >= 70 else {
+            print("懵了")
+            return
+        }
+        print("可以完")
+        
+    }
     
     
 //    “使用func来声明一个函数，使用名字和参数来调用函数。使用->来指定函数返回值的类型。”

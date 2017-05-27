@@ -18,7 +18,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
                                "6：tableView刷新",
                                "7：collectionView的基本使用",
                                "8：代理传值",
-                               "9：SnapKit的使用"]
+                               "9：SnapKit的使用",
+                               "10：Swift修饰和3.0"]
     
     let tableView = UITableView()
     
@@ -81,6 +82,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         case 8:
             let snapKitVC = SnapKitVC()
             self.navigationController?.pushViewController(snapKitVC, animated: true)
+        case 9:
+            let newPointVC = NewPointAndModifierVC()
+            self.navigationController?.pushViewController(newPointVC, animated: true)
         default:
             print("暂无")
         }
