@@ -14,11 +14,11 @@
 		6915E29B1ED578E100134C7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6915E29A1ED578E100134C7D /* Assets.xcassets */; };
 		6915E29E1ED578E100134C7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6915E29C1ED578E100134C7D /* LaunchScreen.storyboard */; };
 		6915E2A91ED57F8500134C7D /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6915E2A81ED57F8500134C7D /* BaseNavigationViewController.swift */; };
+		692A9AA01EDA7A2700F269F2 /* ProvidedDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 692A9A9F1EDA7A2700F269F2 /* ProvidedDataViewController.swift */; };
 		694EA6C11ED830D300E8E610 /* SnapKitVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694EA6C01ED830D300E8E610 /* SnapKitVC.swift */; };
 		695164651ED6ADBC002B2701 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6951645F1ED6ADBC002B2701 /* DataViewController.swift */; };
 		695164661ED6ADBC002B2701 /* NamedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695164601ED6ADBC002B2701 /* NamedShape.swift */; };
 		695164671ED6ADBC002B2701 /* PropertyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695164611ED6ADBC002B2701 /* PropertyShape.swift */; };
-		695164681ED6ADBC002B2701 /* ProtocolClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695164621ED6ADBC002B2701 /* ProtocolClass.swift */; };
 		695164691ED6ADBC002B2701 /* Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695164631ED6ADBC002B2701 /* Shape.swift */; };
 		6951646B1ED6AE07002B2701 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6951646A1ED6AE07002B2701 /* TableViewVC.swift */; };
 		6951646D1ED6B2C0002B2701 /* SwiftPchTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6951646C1ED6B2C0002B2701 /* SwiftPchTool.swift */; };
@@ -30,6 +30,8 @@
 		6951647E1ED6CE90002B2701 /* ScrollViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6951647D1ED6CE90002B2701 /* ScrollViewVC.swift */; };
 		695164841ED6DBA8002B2701 /* ScrollViewSubOneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695164831ED6DBA8002B2701 /* ScrollViewSubOneView.swift */; };
 		695164861ED6DBBE002B2701 /* ScrollViewSubTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695164851ED6DBBE002B2701 /* ScrollViewSubTwoView.swift */; };
+		6960B3201EDE5C0900E68A9D /* PersonOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6960B31F1EDE5C0900E68A9D /* PersonOne.swift */; };
+		6960B3271EDE6CE300E68A9D /* ProtocolAllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6960B3261EDE6CE300E68A9D /* ProtocolAllVC.swift */; };
 		697480791ED7FB9F00A4A928 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697480771ED7FB9F00A4A928 /* BaseViewController.swift */; };
 		6974807A1ED7FB9F00A4A928 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697480781ED7FB9F00A4A928 /* BaseViewController.xib */; };
 		6974807C1ED7FC2B00A4A928 /* TableViewRowHeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6974807B1ED7FC2B00A4A928 /* TableViewRowHeightVC.swift */; };
@@ -58,11 +60,11 @@
 		6915E29D1ED578E100134C7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6915E29F1ED578E100134C7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6915E2A81ED57F8500134C7D /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		692A9A9F1EDA7A2700F269F2 /* ProvidedDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvidedDataViewController.swift; sourceTree = "<group>"; };
 		694EA6C01ED830D300E8E610 /* SnapKitVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapKitVC.swift; sourceTree = "<group>"; };
 		6951645F1ED6ADBC002B2701 /* DataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		695164601ED6ADBC002B2701 /* NamedShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NamedShape.swift; sourceTree = "<group>"; };
 		695164611ED6ADBC002B2701 /* PropertyShape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropertyShape.swift; sourceTree = "<group>"; };
-		695164621ED6ADBC002B2701 /* ProtocolClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolClass.swift; sourceTree = "<group>"; };
 		695164631ED6ADBC002B2701 /* Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		6951646A1ED6AE07002B2701 /* TableViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 		6951646C1ED6B2C0002B2701 /* SwiftPchTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPchTool.swift; sourceTree = "<group>"; };
@@ -74,6 +76,8 @@
 		6951647D1ED6CE90002B2701 /* ScrollViewVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewVC.swift; sourceTree = "<group>"; };
 		695164831ED6DBA8002B2701 /* ScrollViewSubOneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewSubOneView.swift; sourceTree = "<group>"; };
 		695164851ED6DBBE002B2701 /* ScrollViewSubTwoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewSubTwoView.swift; sourceTree = "<group>"; };
+		6960B31F1EDE5C0900E68A9D /* PersonOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonOne.swift; sourceTree = "<group>"; };
+		6960B3261EDE6CE300E68A9D /* ProtocolAllVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolAllVC.swift; sourceTree = "<group>"; };
 		697480771ED7FB9F00A4A928 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		697480781ED7FB9F00A4A928 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		6974807B1ED7FC2B00A4A928 /* TableViewRowHeightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewRowHeightVC.swift; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 		6915E2921ED578E100134C7D /* FBTSwift */ = {
 			isa = PBXGroup;
 			children = (
+				6960B3231EDE6A8000E68A9D /* 13.Swift协议深入学习 */,
+				692A9A9E1EDA789300F269F2 /* 12.补充01基本的数据类型 */,
 				698640FA1ED97930007566F9 /* 11.闭包的使用 */,
 				698640F71ED960C5007566F9 /* 10.Switf3.0和修饰符 */,
 				697480921ED81D7700A4A928 /* 09.SnapKit的使用 */,
@@ -158,13 +164,21 @@
 			path = FBTSwift;
 			sourceTree = "<group>";
 		};
+		692A9A9E1EDA789300F269F2 /* 12.补充01基本的数据类型 */ = {
+			isa = PBXGroup;
+			children = (
+				692A9A9F1EDA7A2700F269F2 /* ProvidedDataViewController.swift */,
+				6960B31F1EDE5C0900E68A9D /* PersonOne.swift */,
+			);
+			path = "12.补充01基本的数据类型";
+			sourceTree = "<group>";
+		};
 		6951645E1ED6ADBC002B2701 /* 01.基本的数据类型和语法 */ = {
 			isa = PBXGroup;
 			children = (
 				6951645F1ED6ADBC002B2701 /* DataViewController.swift */,
 				695164601ED6ADBC002B2701 /* NamedShape.swift */,
 				695164611ED6ADBC002B2701 /* PropertyShape.swift */,
-				695164621ED6ADBC002B2701 /* ProtocolClass.swift */,
 				695164631ED6ADBC002B2701 /* Shape.swift */,
 				697480901ED819B800A4A928 /* ShareManager.swift */,
 			);
@@ -198,6 +212,14 @@
 				695164851ED6DBBE002B2701 /* ScrollViewSubTwoView.swift */,
 			);
 			path = "04.ScrollVIew滚动视图";
+			sourceTree = "<group>";
+		};
+		6960B3231EDE6A8000E68A9D /* 13.Swift协议深入学习 */ = {
+			isa = PBXGroup;
+			children = (
+				6960B3261EDE6CE300E68A9D /* ProtocolAllVC.swift */,
+			);
+			path = "13.Swift协议深入学习";
 			sourceTree = "<group>";
 		};
 		697480741ED7FAF200A4A928 /* 05.TableView高度自适应 */ = {
@@ -404,6 +426,7 @@
 				6951646D1ED6B2C0002B2701 /* SwiftPchTool.swift in Sources */,
 				697480911ED819B800A4A928 /* ShareManager.swift in Sources */,
 				695164751ED6BF2B002B2701 /* VideoPlayVC.swift in Sources */,
+				692A9AA01EDA7A2700F269F2 /* ProvidedDataViewController.swift in Sources */,
 				6951647A1ED6C0FA002B2701 /* VideoPlayCell.swift in Sources */,
 				6915E2941ED578E100134C7D /* AppDelegate.swift in Sources */,
 				697480831ED806C500A4A928 /* TableViewPullVC.swift in Sources */,
@@ -417,14 +440,15 @@
 				698640F91ED96102007566F9 /* NewPointAndModifierVC.swift in Sources */,
 				697480861ED80E7B00A4A928 /* CollectionViewVC.swift in Sources */,
 				6974807F1ED7FEB900A4A928 /* RowHeightCell.swift in Sources */,
+				6960B3201EDE5C0900E68A9D /* PersonOne.swift in Sources */,
 				6951646B1ED6AE07002B2701 /* TableViewVC.swift in Sources */,
 				695164861ED6DBBE002B2701 /* ScrollViewSubTwoView.swift in Sources */,
 				6974807C1ED7FC2B00A4A928 /* TableViewRowHeightVC.swift in Sources */,
 				695164841ED6DBA8002B2701 /* ScrollViewSubOneView.swift in Sources */,
-				695164681ED6ADBC002B2701 /* ProtocolClass.swift in Sources */,
 				695164771ED6C0AD002B2701 /* VideoPlayModel.swift in Sources */,
 				6951647E1ED6CE90002B2701 /* ScrollViewVC.swift in Sources */,
 				6915E2A91ED57F8500134C7D /* BaseNavigationViewController.swift in Sources */,
+				6960B3271EDE6CE300E68A9D /* ProtocolAllVC.swift in Sources */,
 				698640FE1ED97A09007566F9 /* SwiftBlockVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

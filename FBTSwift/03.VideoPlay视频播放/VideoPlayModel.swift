@@ -12,6 +12,17 @@ class VideoPlayModel: NSObject {
 
     var image: String = ""
     var title: String = ""
-    var source: String = ""
+    var source: String?
+    var addStr : String {
+        return image + title
+    }
+    
+    override init() {
+        
+    }
+    init(dict : [String : AnyObject]) {
+        
+        
+    }
     
 }

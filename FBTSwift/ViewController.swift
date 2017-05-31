@@ -19,7 +19,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
                                "7：collectionView的基本使用",
                                "8：代理传值",
                                "9：SnapKit的使用",
-                               "10：Swift修饰和3.0"]
+                               "10：Swift修饰和3.0",
+                               "11：闭包的使用",
+                               "12：补充01基本的数据类型"]
     
     let tableView = UITableView()
     
@@ -85,6 +87,12 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         case 9:
             let newPointVC = NewPointAndModifierVC()
             self.navigationController?.pushViewController(newPointVC, animated: true)
+        case 10:
+            let swiftBlockVC = SwiftBlockVC()
+            self.navigationController?.pushViewController(swiftBlockVC, animated: true)
+        case 11:
+            let proVidedDataVC = ProvidedDataViewController()
+            self.navigationController?.pushViewController(proVidedDataVC, animated: true)
         default:
             print("暂无")
         }
