@@ -10,10 +10,40 @@ import UIKit
 
 class SwiftBlockVC: BaseViewController {
     
+    var ocTool : OCHttpTool = OCHttpTool()
+    var swiftTool : SwiftHttpTool = SwiftHttpTool()
     typealias AddBlock = (Int, Int) -> (Int)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+//        weak var weakSelf = self //swift解决循环引用
+//        ocTool.loadData { (jsondata) in
+//             print("在viewController拿到数据:\(String(describing: jsondata))")
+////            self.view.backgroundColor = UIColor.red//测试循环引用。
+//            weakSelf?.view.backgroundColor = UIColor.red//测试循环引用。
+//
+//        }
+        /***********************/
+        //第二种方式解决循环引用
+//        ocTool.loadData { [weak self](jsondata) in
+//              print("在viewController拿到数据:\(String(describing: jsondata))")
+//              self?.view.backgroundColor = UIColor.red//测试循环引用。
+//        }
+        /***********************/
+        //第三种方式解决循环引用第三种： [unowned self]  比较危险，如果self没有值会崩溃。 ==oc中是__unsafe__unretained 也是弱引用。oc中 __weak修饰弱引用，如果指向的对象销毁，那么指针会指向nil。而修饰的弱引用，销毁指针会依然指向原来的，产生野指针（坏内存访问），坏的地址，也是僵尸对象。不需要self加？
+//        ocTool.loadData { [unowned self](jsondata) in
+//            print("在viewController拿到数据:\(String(describing: jsondata))")
+//            self.view.backgroundColor = UIColor.red//测试循环引用。
+//        }
+        
+ /*******     swift的样式              ****************/
+        weak var weakSelf = self
+        swiftTool.loadData { (jsonData) in
+             weakSelf?.view.backgroundColor = UIColor.red//测试循环引用。
+        }
+        
+        
+        
         navigationItem.title = "闭包的使用"
         print(calAdd(100, 200))
         print(calAdd2(100, 200))
@@ -76,6 +106,12 @@ class SwiftBlockVC: BaseViewController {
         
     }
     
-
-
+    deinit{
+        print("释放了")
+    }
 }
+
+
+
+
+

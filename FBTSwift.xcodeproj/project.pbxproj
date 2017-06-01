@@ -32,6 +32,8 @@
 		695164861ED6DBBE002B2701 /* ScrollViewSubTwoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 695164851ED6DBBE002B2701 /* ScrollViewSubTwoView.swift */; };
 		6960B3201EDE5C0900E68A9D /* PersonOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6960B31F1EDE5C0900E68A9D /* PersonOne.swift */; };
 		6960B3271EDE6CE300E68A9D /* ProtocolAllVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6960B3261EDE6CE300E68A9D /* ProtocolAllVC.swift */; };
+		6967E4ED1EDFFE8F0020F544 /* OCHttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 6967E4EC1EDFFE8F0020F544 /* OCHttpTool.m */; };
+		6967E4F31EE02C9D0020F544 /* SwiftHttpTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6967E4F21EE02C9D0020F544 /* SwiftHttpTool.swift */; };
 		697480791ED7FB9F00A4A928 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697480771ED7FB9F00A4A928 /* BaseViewController.swift */; };
 		6974807A1ED7FB9F00A4A928 /* BaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697480781ED7FB9F00A4A928 /* BaseViewController.xib */; };
 		6974807C1ED7FC2B00A4A928 /* TableViewRowHeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6974807B1ED7FC2B00A4A928 /* TableViewRowHeightVC.swift */; };
@@ -78,6 +80,10 @@
 		695164851ED6DBBE002B2701 /* ScrollViewSubTwoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollViewSubTwoView.swift; sourceTree = "<group>"; };
 		6960B31F1EDE5C0900E68A9D /* PersonOne.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonOne.swift; sourceTree = "<group>"; };
 		6960B3261EDE6CE300E68A9D /* ProtocolAllVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtocolAllVC.swift; sourceTree = "<group>"; };
+		6967E4EA1EDFFE8F0020F544 /* FBTSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FBTSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		6967E4EB1EDFFE8F0020F544 /* OCHttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCHttpTool.h; sourceTree = "<group>"; };
+		6967E4EC1EDFFE8F0020F544 /* OCHttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCHttpTool.m; sourceTree = "<group>"; };
+		6967E4F21EE02C9D0020F544 /* SwiftHttpTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftHttpTool.swift; sourceTree = "<group>"; };
 		697480771ED7FB9F00A4A928 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		697480781ED7FB9F00A4A928 /* BaseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BaseViewController.xib; sourceTree = "<group>"; };
 		6974807B1ED7FC2B00A4A928 /* TableViewRowHeightVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewRowHeightVC.swift; sourceTree = "<group>"; };
@@ -279,6 +285,10 @@
 			isa = PBXGroup;
 			children = (
 				698640FD1ED97A09007566F9 /* SwiftBlockVC.swift */,
+				6967E4EB1EDFFE8F0020F544 /* OCHttpTool.h */,
+				6967E4EC1EDFFE8F0020F544 /* OCHttpTool.m */,
+				6967E4F21EE02C9D0020F544 /* SwiftHttpTool.swift */,
+				6967E4EA1EDFFE8F0020F544 /* FBTSwift-Bridging-Header.h */,
 			);
 			path = "11.闭包的使用";
 			sourceTree = "<group>";
@@ -327,6 +337,7 @@
 					6915E28F1ED578E100134C7D = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = CSMH4BJ3Z3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -430,6 +441,7 @@
 				6951647A1ED6C0FA002B2701 /* VideoPlayCell.swift in Sources */,
 				6915E2941ED578E100134C7D /* AppDelegate.swift in Sources */,
 				697480831ED806C500A4A928 /* TableViewPullVC.swift in Sources */,
+				6967E4ED1EDFFE8F0020F544 /* OCHttpTool.m in Sources */,
 				697480791ED7FB9F00A4A928 /* BaseViewController.swift in Sources */,
 				695164651ED6ADBC002B2701 /* DataViewController.swift in Sources */,
 				694EA6C11ED830D300E8E610 /* SnapKitVC.swift in Sources */,
@@ -444,6 +456,7 @@
 				6951646B1ED6AE07002B2701 /* TableViewVC.swift in Sources */,
 				695164861ED6DBBE002B2701 /* ScrollViewSubTwoView.swift in Sources */,
 				6974807C1ED7FC2B00A4A928 /* TableViewRowHeightVC.swift in Sources */,
+				6967E4F31EE02C9D0020F544 /* SwiftHttpTool.swift in Sources */,
 				695164841ED6DBA8002B2701 /* ScrollViewSubOneView.swift in Sources */,
 				695164771ED6C0AD002B2701 /* VideoPlayModel.swift in Sources */,
 				6951647E1ED6CE90002B2701 /* ScrollViewVC.swift in Sources */,
@@ -573,11 +586,14 @@
 			baseConfigurationReference = 3C8EBF693A088C5391AB7EE3 /* Pods-FBTSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = CSMH4BJ3Z3;
 				INFOPLIST_FILE = FBTSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fbt.FBTSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FBTSwift/11.闭包的使用/FBTSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -587,11 +603,13 @@
 			baseConfigurationReference = 26534D4949ED6E2A3C103C69 /* Pods-FBTSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = CSMH4BJ3Z3;
 				INFOPLIST_FILE = FBTSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fbt.FBTSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FBTSwift/11.闭包的使用/FBTSwift-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
