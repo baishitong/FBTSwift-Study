@@ -9,6 +9,11 @@
 import UIKit
 
 class ProvidedDataViewController: BaseViewController {
+   /// 懒加载
+    lazy var array : [String] = {
+        () ->[String] in
+        return["why", "imj", "inj"]
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +23,11 @@ class ProvidedDataViewController: BaseViewController {
         dicFunc()
         rowFunc()
         optionalFunc()
+        print("输出懒加载\(array)")
+        
+        
+        
+        
         print(sum(num1: 20, num2: 30))
 //        注意一：
 //        内部参数：在函数内部可以看到的参数就是内部参数，默认情况下所有的参数都是内部参数

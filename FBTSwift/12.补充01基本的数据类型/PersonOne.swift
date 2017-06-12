@@ -49,7 +49,7 @@ class PersonOne: NSObject {
     var mathScore : Double = 0.0
     var chineseScore : Double = 0.0
     
-    //定义计算属性：通过别的方式计算到结构狗的属性，而且是通过类名进行访问
+    //定义计算属性：通过别的方式计算到结构体的属性，而且是通过类名进行访问
     var averageScore : Double {
         return (mathScore + chineseScore) * 0.5
     }

@@ -12,10 +12,17 @@ class PresentVC: BaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "提示框Action和Present控制器"
+        view.backgroundColor = UIColor.yellow
 
         // Do any additional setup after loading the view.
     }
 
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let BVC = BViewController()
+        self.navigationController?.present(BVC, animated: true, completion: nil)
+        
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -21,7 +21,12 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
                                "9：SnapKit的使用",
                                "10：Swift修饰和3.0",
                                "11：闭包的使用",
-                               "12：补充01基本的数据类型"]
+                               "12：补充01基本的数据类型",
+                               "13：Swift协议深入学习",
+                               "14：CoreGraphicsFramework学习",
+                               "15：提示框Action和Present控制器",
+                               "16：获取设备的所有信息打印",
+                               "17：分栏控制器+瀑布流布局"]
     
     let tableView = UITableView()
     
@@ -93,10 +98,24 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         case 11:
             let proVidedDataVC = ProvidedDataViewController()
             self.navigationController?.pushViewController(proVidedDataVC, animated: true)
+        case 12:
+            let protocolVC = ProtocolAllVC()
+            self.navigationController?.pushViewController(protocolVC, animated: true)
+        case 13:
+            let coreGraphicsVC = CoreGraphicsVC()
+            self.navigationController?.pushViewController(coreGraphicsVC, animated: true)
+        case 14:
+            let presentVC = PresentVC()
+            self.navigationController?.pushViewController(presentVC, animated: true)
+        case 15:
+            let deviceInfoVC = DeviceInfoVC()
+            self.navigationController?.pushViewController(deviceInfoVC, animated: true)
+        case 16:
+            let fallFlowVC = WaterfallFlowCollectVC()
+            self.navigationController?.pushViewController(fallFlowVC, animated: true)
         default:
             print("暂无")
         }
-        
         
     }
     

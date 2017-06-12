@@ -37,12 +37,16 @@ class SwiftBlockVC: BaseViewController {
 //        }
         
  /*******     swift的样式              ****************/
-        weak var weakSelf = self
-        swiftTool.loadData { (jsonData) in
-             weakSelf?.view.backgroundColor = UIColor.red//测试循环引用。
+//        weak var weakSelf = self
+//         [weak self]
+//        [unowned self]
+        swiftTool.loadData {[weak self](jsonData) in
+//            weakSelf?.view.backgroundColor = UIColor.red//测试循环引用。
+            self?.view.backgroundColor = UIColor.red
+//           self.view.backgroundColor = UIColor.red
+
+//
         }
-        
-        
         
         navigationItem.title = "闭包的使用"
         print(calAdd(100, 200))
@@ -65,7 +69,11 @@ class SwiftBlockVC: BaseViewController {
 
     }
 
-    // 闭包的定义
+//    // 闭包的定义
+//    let calYdd: () -> () = {
+//    
+//        
+//    }
     let calAdd: (Int, Int) -> (Int) = {
         (a: Int, b: Int) -> Int in
         return a + b
