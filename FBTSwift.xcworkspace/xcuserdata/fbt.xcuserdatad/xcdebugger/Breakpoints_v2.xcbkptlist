@@ -9,124 +9,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "FBTSwift/01.&#x57fa;&#x672c;&#x7684;&#x6570;&#x636e;&#x7c7b;&#x578b;&#x548c;&#x8bed;&#x6cd5;/DataViewController.swift"
-            timestampString = "517568232.413868"
+            filePath = "FBTSwift/10.Switf3.0&#x548c;&#x4fee;&#x9970;&#x7b26;/NewPointAndModifierVC.swift"
+            timestampString = "544350307.209241"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "322"
-            endingLineNumber = "322"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTSwift/01.&#x57fa;&#x672c;&#x7684;&#x6570;&#x636e;&#x7c7b;&#x578b;&#x548c;&#x8bed;&#x6cd5;/DataViewController.swift"
-            timestampString = "517568232.413868"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "323"
-            endingLineNumber = "323"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTSwift/01.&#x57fa;&#x672c;&#x7684;&#x6570;&#x636e;&#x7c7b;&#x578b;&#x548c;&#x8bed;&#x6cd5;/DataViewController.swift"
-            timestampString = "517568232.413868"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "327"
-            endingLineNumber = "327"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTSwift/01.&#x57fa;&#x672c;&#x7684;&#x6570;&#x636e;&#x7c7b;&#x578b;&#x548c;&#x8bed;&#x6cd5;/DataViewController.swift"
-            timestampString = "517568232.413868"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "338"
-            endingLineNumber = "338"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTSwift/01.&#x57fa;&#x672c;&#x7684;&#x6570;&#x636e;&#x7c7b;&#x578b;&#x548c;&#x8bed;&#x6cd5;/DataViewController.swift"
-            timestampString = "517568232.413868"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "314"
-            endingLineNumber = "314"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTSwift/01.&#x57fa;&#x672c;&#x7684;&#x6570;&#x636e;&#x7c7b;&#x578b;&#x548c;&#x8bed;&#x6cd5;/DataViewController.swift"
-            timestampString = "517568232.413868"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "282"
-            endingLineNumber = "282"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTSwift/01.&#x57fa;&#x672c;&#x7684;&#x6570;&#x636e;&#x7c7b;&#x578b;&#x548c;&#x8bed;&#x6cd5;/DataViewController.swift"
-            timestampString = "517568232.413868"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "284"
-            endingLineNumber = "284"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTSwift/01.&#x57fa;&#x672c;&#x7684;&#x6570;&#x636e;&#x7c7b;&#x578b;&#x548c;&#x8bed;&#x6cd5;/DataViewController.swift"
-            timestampString = "517568232.413868"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "280"
-            endingLineNumber = "280"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -138,23 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FBTSwift/10.Switf3.0&#x548c;&#x4fee;&#x9970;&#x7b26;/NewPointAndModifierVC.swift"
-            timestampString = "517568232.413868"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTSwift/10.Switf3.0&#x548c;&#x4fee;&#x9970;&#x7b26;/NewPointAndModifierVC.swift"
-            timestampString = "517565883.201164"
+            timestampString = "544350307.209543"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -170,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FBTSwift/10.Switf3.0&#x548c;&#x4fee;&#x9970;&#x7b26;/NewPointAndModifierVC.swift"
-            timestampString = "517568232.413868"
+            timestampString = "544350307.209602"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
             landmarkName = "test()"
             landmarkType = "7">
          </BreakpointContent>
@@ -186,27 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FBTSwift/10.Switf3.0&#x548c;&#x4fee;&#x9970;&#x7b26;/NewPointAndModifierVC.swift"
-            timestampString = "517566625.221695"
+            timestampString = "544350307.209653"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTSwift/01.&#x57fa;&#x672c;&#x7684;&#x6570;&#x636e;&#x7c7b;&#x578b;&#x548c;&#x8bed;&#x6cd5;/DataViewController.swift"
-            timestampString = "517568189.573331"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "246"
-            endingLineNumber = "246"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -390,23 +246,7 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FBTSwift/02.TableView&#x5355;&#x5143;&#x89c6;&#x56fe;/TableViewVC.swift"
-            timestampString = "518067810.63797"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "22"
-            endingLineNumber = "22"
-            landmarkName = "tableView"
-            landmarkType = "24">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FBTSwift/02.TableView&#x5355;&#x5143;&#x89c6;&#x56fe;/TableViewVC.swift"

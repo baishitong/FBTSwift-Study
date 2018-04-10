@@ -95,7 +95,7 @@ extension TableViewPullVC {
         tableView.addSubview(refreshControl!)
     }
     
-    func refreshData() {
+   @objc func refreshData() {
     
         // 移除老数据
         //        dataArray.removeAll()
@@ -120,7 +120,7 @@ extension TableViewPullVC {
         
     }
     
-    func timeOut() {
+    @objc func timeOut() {
     
         setupScrollingView()
         let start = self.dataArray.count + 1

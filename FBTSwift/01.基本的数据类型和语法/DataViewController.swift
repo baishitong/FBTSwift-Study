@@ -9,10 +9,8 @@
 import UIKit
 import Foundation
 
-
 class DataViewController: BaseViewController {
 
-    
 //    在例子中，Ace被显式赋值为 1，并且剩下的原始值会按照顺序赋值。你也可以使用字符串或者浮点数作为枚举的原始值。使用rawValue属性来访问一个枚举成员的原始值。”
     
     enum Rank:Int {
@@ -61,7 +59,6 @@ class DataViewController: BaseViewController {
         case None
         case Some(Wrapped)
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -267,7 +264,26 @@ class DataViewController: BaseViewController {
         let manage3 = ShareManager.instance
         print("manage:\(manage) manage1:\(manage1) manage2:\(manage2) manage3:\(manage3)")
         
+        // 错误处理 一个do语句创建了一个新的包含作用域,使得错误能被传播到一个或多个catch从句。
+        do {
+            try canThrowAnError()
+            //没有错误消息抛出
+        } catch  {
+            //有一个错误消息抛出
+        }
+//        如果断言或者先决条件中的布尔条件评估的结果为 true（真），则代码像往常一样继续执行。如果布尔条件评估结果为false（假），程序的当前状态是无效的，则代码执行结束，应用程序中止。断言帮助你在开发阶段找到错误和不正确的假设，先决条件帮助你在生产环境中探测到存在的问题。
+//        在这个例子中，只有 age >= 0 为 true 时，即 age 的值非负的时候，代码才会继续执行。如果 age 的值是负数，就像代码中那样，age >= 0 为 false，断言被触发，终止应用。
+        let hhAge = -3
         
+//        assert(hhAge >= 0, "a peison") //触发了断言 崩溃了项目
+        
+        if hhAge > 10 {
+            print("大于10")
+        } else if hhAge > 0 {
+            print("大于0")
+        } else {
+//            assertionFailure("断言失败 ，一个人的年龄不能小于0")//触发了断言 崩溃了项目
+        }
         
         let sex = 0 //0是男 1是女
         // case穿透
@@ -388,7 +404,6 @@ class DataViewController: BaseViewController {
             if score > max {
                 max = score
             }else if score < min {
-            
                 min = score
             }
             sum += score
@@ -461,6 +476,12 @@ class DataViewController: BaseViewController {
             result.append(item)
         }
         return result
+    }
+    
+//    一个函数可以通过在声明中添加throws关键词来抛出错误消息。当你的函数能抛出错误消息时, 你应该在表达式中前置try关键词。
+    func canThrowAnError() throws {
+        // 函数抛出错误
+        print("错了的心")
     }
     
     

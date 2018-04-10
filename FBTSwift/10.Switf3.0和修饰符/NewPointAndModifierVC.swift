@@ -19,7 +19,7 @@ class NewPointAndModifierVC: BaseViewController {
         // 2.fileprivate访问级别所修饰的属性或者方法在当前的Swift源文件里可以访问。
         test2()
         //3.internal（默认访问级别，internal修饰符可写可不写）internal访问级别所修饰的属性或方法在源代码所在的整个模块都可以访问。如果是框架或者库代码，则在整个框架内部都可以访问，框架由外部代码所引用时，则不可以访问。如果是App代码，也是在整个App代码，也是在整个App内部可以访问。
-         test3()
+        test3()
         // 4.public可以被任何人访问。但其他module中不可以被override和继承，而在module内可以被override和继承。
         test4()
         // 5.open可以被任何人使用，包括override和继承。
@@ -63,10 +63,13 @@ class NewPointAndModifierVC: BaseViewController {
         user.name = "冯柏通该结婚了"
         user.age = 24
          // 使用KVC取值,注意#keyPath里是  类名.属性
-        let name = user.value(forKeyPath: #keyPath(User.name))
+        let name = user.value(forKey: "冯柏通该结婚了")
+//        let name = user.value(forKeyPath: #keyPath(User.name))
+        
         print(name ?? String())
-        user.setValue("xixixi", forKeyPath: #keyPath(User.name))
-        print("name = \(user.name)")
+        user.setValue("xixixi", forKey: "user.name")
+//        user.setValue("xixixi", forKeyPath: #keyPath(User.name))
+        print("name = \(String(describing: user.name))")
         
          // 6.在 Swift 3 中，π 提供了 Float，Double 与 CGFloat 三种形式（Float.pi、Double.pi、CGFloat.pi），所以求周长还可以这么写
         let r = 3.0

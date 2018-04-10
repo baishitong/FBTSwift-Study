@@ -47,6 +47,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "cellID", for: indexPath) //这样写会崩溃
         cell.selectionStyle = .none
         let text = dataArray[indexPath.row]
         cell.textLabel?.text = text
@@ -122,7 +123,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
 
 
