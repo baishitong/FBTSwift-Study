@@ -79,7 +79,7 @@ extension VideoPlayVC {
     
     func setupTableView() {
     
-        tableView.frame = view.bounds
+        tableView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.tableFooterView = UIView()

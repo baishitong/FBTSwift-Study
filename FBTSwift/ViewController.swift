@@ -138,7 +138,7 @@ extension ViewController {
     
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.frame = self.view.bounds
+        tableView.frame = CGRect(x: 0, y: 0, width: SCREEN_WIDTH, height: SCREEN_HEIGHT)
         self.view.addSubview(tableView)
     }
 }
