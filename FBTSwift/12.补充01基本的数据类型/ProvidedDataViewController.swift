@@ -76,7 +76,7 @@ extension ProvidedDataViewController {
     
         let str :String = "高级字符串的使用"
         let str2 = "可以省略，推导"
-        for c in str2.characters {
+        for c in str2 {
             print(c)
         }
         let str3 = str + str2

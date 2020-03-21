@@ -69,7 +69,7 @@ extension TableViewRowHeightVC {
         //设置estimatedRowHeight属性默认值
         tableView.estimatedRowHeight = 200
         //rowHeight属性设置为UITableViewAutomaticDimension
-        self.tableView.rowHeight = UITableViewAutomaticDimension;
+        self.tableView.rowHeight = UITableView.automaticDimension;
         // 注册cell
         tableView.register(UINib.init(nibName: "RowHeightCell", bundle: nil), forCellReuseIdentifier: cellId)
 

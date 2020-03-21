@@ -76,7 +76,7 @@ extension SnapKitVC {
         innerBox.backgroundColor = UIColor.red
         view.addSubview(innerBox)
         innerBox.snp.makeConstraints { (make) in
-             make.edges.equalTo(box).inset(UIEdgeInsetsMake(10, 10, 10, 10))
+            make.edges.equalTo(box).inset(UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10))
         }
     
     }

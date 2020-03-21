@@ -70,7 +70,7 @@ extension HYContentView {
     fileprivate func setupUI() {
         // 1.将所有的控制器添加到父控制器中
         for vc in childVcs {
-            parentVc.addChildViewController(vc)
+            parentVc.addChild(vc)
         }
         
         // 2.添加UICollectionView

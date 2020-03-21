@@ -77,7 +77,7 @@ extension TableViewPullVC {
         loadMoreView?.autoresizingMask = .flexibleWidth
         loadMoreView?.backgroundColor = UIColor.orange
         // 中间加载进度条
-        activityIndicator = UIActivityIndicatorView(activityIndicatorStyle: .white)
+        activityIndicator = UIActivityIndicatorView(style: .white)
         activityIndicator?.color = UIColor.darkGray
         let x = (self.loadMoreView?.frame.size.width)! / 2 - (activityIndicator?.frame.size.width)! / 2
         let y = (self.loadMoreView?.frame.size.height)! / 2 - (activityIndicator?.frame.size.height)! / 2

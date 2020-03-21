@@ -15,7 +15,7 @@ class TableViewVC: BaseViewController {
                      "生活理应如此"]
     var fontRowIndex = 0
 //    let tableView = UITableView()
-    let suspendButton = UIButton(type: UIButtonType.custom)
+    let suspendButton = UIButton(type: UIButton.ButtonType.custom)
     
 //    lazy var tableView = UITableView()
     lazy var tableView: UITableView = {

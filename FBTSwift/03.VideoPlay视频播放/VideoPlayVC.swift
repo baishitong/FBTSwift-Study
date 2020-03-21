@@ -18,7 +18,7 @@ class VideoPlayVC: BaseViewController, UITableViewDelegate, UITableViewDataSourc
     //创建播放器
     var playVC = AVPlayerViewController()
     var playView = AVPlayer()
-    let playerViderButton = UIButton(type: UIButtonType.custom)
+    let playerViderButton = UIButton(type: UIButton.ButtonType.custom)
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "系统视频播放器"
