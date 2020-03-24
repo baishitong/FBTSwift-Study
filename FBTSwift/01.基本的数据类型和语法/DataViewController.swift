@@ -65,6 +65,124 @@ class DataViewController: BaseViewController {
         
         navigationItem.title = "基本的语法调用附加单例的创建"
         
+        
+        let emptyString = String()
+        if emptyString.isEmpty {
+            print("kongd")
+        }
+        let numbersdddd = """
+        1
+            2
+        3
+        4
+        5
+        """
+        print(numbersdddd)
+        
+        var www = "dddd"
+        var wwwy = www
+        wwwy.append("ccc")
+        wwwy+="ggg"
+        print(wwwy,www)
+        
+        
+        let sddddtr = #"1\#n2\n3"#
+        
+        print(sddddtr)
+        
+        let sssstr = ##"1"#2\#n3"##
+        print(sssstr)
+        
+        
+        
+        var wellll = "hello"
+        print(wellll[wellll.startIndex])
+        print(wellll[wellll.index(before: wellll.endIndex)])
+        
+        wellll.insert("!", at: wellll.endIndex)
+        print(wellll);
+        
+        let  aaaaa: Int? = nil
+        let b = 4
+        print( aaaaa ?? b)
+        //代码标签
+        var fbtnumber = 10
+        whileLoop: while fbtnumber > 0 {
+            switch fbtnumber {
+            case 9:
+                print("9")
+            case 10:
+                var sum = 0
+                for index in 0...10 {
+                    sum += index
+                    if index == 9 {
+                        print(sum)
+                        break whileLoop
+                    }
+                }
+            default:
+                break
+            }
+            fbtnumber -= 1
+        }
+        
+        var fbtnumberTwo = 10
+        while fbtnumberTwo > 0 {
+            switch fbtnumberTwo {
+            case 9:
+                print("9")
+            case 10:
+                var sum = 0
+                for index in 0...10 {
+                    sum += index
+                    if index == 9 {
+                        print(sum)
+                        break
+                    }
+                }
+            default:
+                print("default")
+            }
+            fbtnumberTwo -= 1
+        }
+        
+        //可选项目模式（Optional Pattern）optional是一个枚举，.some是包含了真实的值。
+        let someOptional:Int? = 42
+        if case .some(let x) = someOptional{
+            print(x)
+        }
+//        用枚举的方式
+        if case let x? = someOptional{
+            print(x)
+        }
+        
+        let arrayOfOptionalInts:[Int?] = [nil,2,3,nil,5]
+        for case let number? in arrayOfOptionalInts {
+            print("Found a \(number)")
+        }
+        
+////      表达式模式
+//        struct Employee {
+//            var salary:Int
+//        }
+//        
+//        func ~= (left:ClosedRange<Int>, right:Employee) -> Bool {
+//            return left.contains(right.salary)
+//        }
+//        
+//        var e:Employee = Employee(salary: 6000)
+//        
+//        switch e {
+//        case 0...1000:
+//            print("吃不饱")
+//        default:
+//            <#code#>
+//        }
+        
+        
+        
+        
+        
         view.backgroundColor = UIColor.white
         let explicitDouble:Double = 70
         print(explicitDouble)

@@ -196,7 +196,10 @@ extension ProvidedDataViewController {
         
         
         var name2 : String? = nil
-        name2 = "爽死"
+        
+        
+        name2 = "爽死-----"
+        print(name2.unsafelyUnwrapped);
         print(name2!)
         
         let url = NSURL(string: "http://520it.com")//string返回值为可选类型,如果加了汉字就有可能创建失败。所以。url是不安全的。"http://520it.com\\到底"
