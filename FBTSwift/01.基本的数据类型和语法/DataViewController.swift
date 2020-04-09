@@ -179,9 +179,77 @@ class DataViewController: BaseViewController {
 //            <#code#>
 //        }
         
+        print(greet(person: "ruirui"))
+        print(greet(person: "fbt", from: "china"))
+        print(arithmeticMean(1,2,3,4,5))
         
         
+        var someA = 3
+        var somrB = 5
+        swapTwoTints(&someA, &somrB)
+        print("A==\(someA) b == \(somrB)")
+      
         
+        
+        let fiveZs = Array(repeating:"Z",count: 5)
+        print(fiveZs)
+        
+        let nujmbers = [Int](0...7)
+        print(nujmbers)
+        
+        let persons = ["zhangsan":27,"lise":28]
+        let names = [String](persons.keys)
+        print(names)
+        
+//        foreach  无法使用break或者continue跳出或者跳过循环，使用return只能退出当前一次循环的执行体。
+        var numbersddd = [Int](0...9)
+        numbersddd.forEach { (num) in
+            if num == 3 {
+//                break
+                return
+            }
+            print(num * 10)
+        }
+        for (index,num) in numbersddd.enumerated() {
+            print(index,num)
+        }
+        
+        var numIterator = numbersddd.makeIterator()
+        while let num = numIterator.next() {
+            print("这是next咋得到的\(num)")
+        }
+        //获取数组的索引区间
+        for i in numbersddd.indices {
+            print(numbersddd[i] * 100)
+        }
+        
+//      返回数组最后一个符合给定条件的元素
+        print(numbersddd.last(where: { $0 > 5}) ?? "hhh")
+//      返回给定的元素在数组中出现的第一个位置
+        print(numbersddd.firstIndex(of: 5) ?? "没找到")
+//      返回符合条件的最后一个元素的位置
+        print(numbersddd.first(where: {$0 > 8}) ?? "没有比8大的值在Index中")
+        
+        
+        let eeeerrror = [(12,"error12"),(23,"error23"),(45,"error45")]
+        print(eeeerrror.min(by: { (a, b) -> Bool in
+            a.0 < b.0
+        }) ?? "me")
+        
+        
+        numbersddd.append(contentsOf: 100...105)
+        
+        numbersddd.insert(contentsOf: -2...0, at: 0)
+        
+        numbersddd.insert(-99, at: 0)
+        print(numbersddd)
+        
+        numbersddd.dropLast()
+        print(numbersddd)
+
+        var arrayStr = ["hello","world"]
+        print(arrayStr.joined())
+        print(arrayStr.joined(separator: ","))
         
         view.backgroundColor = UIColor.white
         let explicitDouble:Double = 70
@@ -573,8 +641,17 @@ class DataViewController: BaseViewController {
     }
     
 //    Swift中参数默认是常量，在函数中是不能修改外部传入参数的值得，如果有需求，需要将参数声明成inout类型，示例如下：
+    //输入输出形式函数，参数有一个能输入函数的值，函数可以对其进行修改，还能输出到函数外边替换原来的值。实际参数标签是可以省略的
+    func swapTwoTints(_ a: inout Int, _ b: inout Int) {
+        let temp = a
+        a = b
+        b = temp
+    }
     
-    
+//    { (parameters) -> (retunr type) in
+//       statements
+//    }
+//    
     
     
 //    //迷惘
@@ -603,6 +680,25 @@ class DataViewController: BaseViewController {
     }
     
     
+    func greet(person:String) -> String {
+        "Heelg," + person + "!"
+    }
+    
+    
+    func greet(person:String, from hometown:String) -> String {
+        return "Hello \(person)! Glad you could visit from \(hometown)"
+    }
+    
+    //可变形式参数。
+    func arithmeticMean(_ numbers:Double...) -> Double {
+        var total:Double = 0
+        for number in numbers {
+            total += number
+        }
+        return total / Double(numbers.count)
+    }
+    
+    
 //    “在类型名后面使用where来指定对类型的需求，比如，限定类型实现某一个协议，限定两个类型是相同的，或者限定某个类必须有一个特定的父类。”
     
     override func didReceiveMemoryWarning() {
@@ -611,14 +707,5 @@ class DataViewController: BaseViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

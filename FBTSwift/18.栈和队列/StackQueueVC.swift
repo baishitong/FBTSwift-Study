@@ -10,21 +10,174 @@ import UIKit
 
 class StackQueueVC: BaseViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    
+    struct Stack<T> {
+        private var elements = [T]()
+        
+        var count : Int {
+            return elements.count
+        }
 
-        // Do any additional setup after loading the view.
+        var isEmpty:Bool {
+            return elements.isEmpty
+        }
+        
+        mutating func push (_ element: T) {
+            elements.append(element)
+        }
+        
+        mutating func pop() -> T? {
+            return elements.popLast()//返回可选择值结果，如果数组值为空，返回的为nil。
+        }
+    
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    struct Queue<T> {
+        private var elements = [T]()
+        
+        var count : Int {
+            return elements.count
+        }
+        
+        var isEmpty:Bool {
+            return elements.isEmpty
+        }
+        
+        mutating func enqueue(_ element:T) {
+            elements.append(element)
+        }
+        mutating func dequeue() -> T? {
+            return isEmpty ? nil : elements.removeFirst()
+        }
+        
     }
-    */
+    
+    
+    struct Person {
+        var naem: String
+        var age: Int
+    }
+    
+//
+//    extension Person: Hashable {
+//        func hash(into hasher: inout Hasher) {
+//            hasher.combine(age)
+//            hasher.combine(name)
+//        }
+//    }
+
+
+
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        var stackkk = Stack<Int>()
+        stackkk.push(1)
+        stackkk.push(6)
+        stackkk.push(8)
+        stackkk.push(10)
+        print(stackkk.count);
+        print(stackkk.pop() ?? 0)
+        print(stackkk.count)
+        
+        var queue = Queue<Int>()
+        queue.enqueue(25)
+        queue.enqueue(12)
+        queue.enqueue(1)
+        print(queue.count)
+        print(queue.dequeue() ?? 0)
+        print(queue.count)
+        
+//        set---集合
+        var letters = Set<Character>()
+        letters.insert("c")
+        print(letters)
+        
+        var course: Set<String>  = ["Math","English","History"]
+        course.insert("History")
+        print(course)
+//        Type 'StackQueueVC.Person' does not conform to protocol 'Hashable'
+//        let persons: Set<Person> = [Person(naem: "zhangsan", age: 20)]
+//        print(persons)
+
+        let set: Set<Character> = ["A","B","C"]
+        let set2: Set<Character>  = ["B","E","F","G"];
+        print(set.intersection(set2)) //交集
+        print(set.union(set2))//两个集合在一起
+        print(set.symmetricDifference(set2))//两个集合减去两个集合的交集
+        print(set.subtracting(set2))//相对补集。set剔除两个集合的交集，
+        
+        
+//        var dict1 = Dictionary<String, Int>()
+//        var dict2 = [String: Int]()
+//        var dict3: Dictionary<String, Int> = [:]
+        var dict = ["a":18,"b":24]
+        for (key,valur) in dict {
+            print("name \(key),age\(valur)")
+        }
+        print(dict.merging(["a":2,"c":5], uniquingKeysWith: { (current, _) -> Int in
+            current
+        }))
+        
+        print(dict.merging(["a":10,"d":11], uniquingKeysWith: { (_, new) -> Int in
+            new
+        }))
+        dict.merging(["a":2,"c":5], uniquingKeysWith: { (current, _) -> Int in
+            current
+        })
+        print(dict)
+        dict.merging(["a":10,"d":11], uniquingKeysWith: { (_, new) -> Int in
+            new
+        })
+        print(dict)
+        
+        let kvs:KeyValuePairs = ["a":1,"b":2,"c":3];
+        print(kvs)
+        
+
+        
+        let names = ["D","A","C","B"]
+//        var revers = names.sorted { (s1: String, s2: String) -> Bool in
+//            return s1 > s2
+//        }
+//        var revers = names.sorted { s1, s2 in return s1 > s2}
+//        var revers = names.sorted { s1, s2 in s1 > s2}
+
+//        var revers = names.sorted(by: { $0 > $1})
+//        var revers = names.sorted(by: >)
+        
+        let revers = names.sorted{$0 > $1}
+        print(revers)
+        
+        
+        //闭包的捕获值。
+        
+        let increBytem = makeInAdd(amount: 10)
+        print(increBytem())
+        print(increBytem())
+
+        print(increBytem())
+
+        let IncreBySeve = makeInAdd(amount: 7)
+        print(IncreBySeve())
+        
+        let anotherIncreByTem = increBytem
+        
+        print(anotherIncreByTem())
+
+    }
+    
+    func makeInAdd(amount: Int) -> () -> Int {
+        var total = 0
+        func increadd() -> Int {
+            total += amount
+            return total
+        }
+        return increadd
+    }
 
 }
+
+

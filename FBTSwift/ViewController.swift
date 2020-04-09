@@ -26,7 +26,8 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
                                "14：CoreGraphicsFramework学习",
                                "15：提示框Action和Present控制器",
                                "16：获取设备的所有信息打印",
-                               "17：分栏控制器+瀑布流布局"]
+                               "17：分栏控制器+瀑布流布局",
+                               "18：栈和队列"]
     
     let tableView = UITableView()
     
@@ -114,6 +115,9 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         case 16:
             let fallFlowVC = WaterfallFlowCollectVC()
             self.navigationController?.pushViewController(fallFlowVC, animated: true)
+        case 17:
+            let stackVC = StackQueueVC()
+            self.navigationController?.pushViewController(stackVC, animated: true)
         default:
             print("暂无")
         }
