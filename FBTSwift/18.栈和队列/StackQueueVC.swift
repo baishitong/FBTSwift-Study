@@ -11,6 +11,8 @@ import UIKit
 class StackQueueVC: BaseViewController {
 
     
+    var x:String = "hello"
+    
     struct Stack<T> {
         private var elements = [T]()
         
@@ -65,6 +67,11 @@ class StackQueueVC: BaseViewController {
 //            hasher.combine(name)
 //        }
 //    }
+    
+    enum Barcode {
+        case upc(Int,Int,Int,Int)
+        case qrCode(String)
+    }
 
 
 
@@ -166,7 +173,53 @@ class StackQueueVC: BaseViewController {
         let anotherIncreByTem = increBytem
         
         print(anotherIncreByTem())
+        
+        
+        var fbt = ["f","b","t"]
+        print(fbt.count)
+        let customfbt = { fbt.remove(at: 0)}
+        print(fbt.count)
+        print(customfbt())
+        print(fbt.count)
+        //自动闭包
+        serve(custem:{fbt.remove(at: 0)})
+        serveAuto(custem: fbt.remove(at: 0))
+        
+        
+        var fbtnames = ["zhangsan","lisi","wangwu","zhaoliu"]
+//        let customerProvider = {fbtnames.remove(at: 0)}
+//        print(fbtnames.count)
+//        print(customerProvider())
+//        print(fbtnames.count)
+        
+        collectProviders(provider: fbtnames.remove(at: 0))
+//        collectProviders(provider: {fbtnames.remove(at: 0)})
+        print(fbtnames.count)
+        for provider in providers {
+            print(provider)
+        }
+        print(fbtnames.count)
+        //必须使用self
+        collectProviders(provider: self.x)
+        
+        let gaoNumbers = [1,2,3,4,5]
+        print(gaoNumbers.map {$0 * 10} )
+        print(gaoNumbers.filter {$0 > 4})
+        print(gaoNumbers.reduce(100) {$0  + $1})
+        
+        let dames:[String?] = ["zzzz","lll",nil,"wwww",nil,"mmmm"]
+        print(dames.count)
+        
+        print(dames.compactMap{ $0 })
+        print(dames.compactMap{ $0?.count })
+        
+        
+        
+        var produceCode = Barcode.upc(1, 2, 3, 4)
+        print(produceCode)
+        
 
+       
     }
     
     func makeInAdd(amount: Int) -> () -> Int {
@@ -177,6 +230,26 @@ class StackQueueVC: BaseViewController {
         }
         return increadd
     }
+    
+    func serve(custem customerProvider:() -> String) {
+        print(customerProvider())
+    }
+    func serveAuto(custem customerProvider:@autoclosure() -> String) {
+        print(customerProvider())
+    }
+    //逃逸闭包
+    var providers:[() ->String] = []
+
+    func collectProviders(provider: @autoclosure @escaping () ->String) {
+        providers.append(provider)
+    }
+//    var completionHandlers:[() -> Void] = []
+//    func someFunctionWithEscapingClosure(completionHandler: @escaping ()) -> Void {
+//        completionHandlers.append {
+//            completionHandler
+//        }
+//    }
+    //自动闭包
 
 }
 

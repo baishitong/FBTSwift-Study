@@ -13,7 +13,7 @@ class DataViewController: BaseViewController {
 
 //    在例子中，Ace被显式赋值为 1，并且剩下的原始值会按照顺序赋值。你也可以使用字符串或者浮点数作为枚举的原始值。使用rawValue属性来访问一个枚举成员的原始值。”
     
-    enum Rank:Int {
+    enum Rank:Int ,CaseIterable{
         case Ace = 1
         case Two, Three, Four, Five, Six, Sever, Eight, Nine, Ten
         case Jack, Queen, King
@@ -64,7 +64,9 @@ class DataViewController: BaseViewController {
         super.viewDidLoad()
         
         navigationItem.title = "基本的语法调用附加单例的创建"
-        
+        for item in Rank.allCases {
+            print(item)
+        }
         
         let emptyString = String()
         if emptyString.isEmpty {

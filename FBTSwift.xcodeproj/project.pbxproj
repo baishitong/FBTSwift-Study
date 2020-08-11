@@ -68,7 +68,10 @@
 		699E6C821EEE2C9F0007ED8B /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E6C811EEE2C9F0007ED8B /* Const.swift */; };
 		699E6C841EEE2D3C0007ED8B /* FlowChildVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E6C831EEE2D3C0007ED8B /* FlowChildVC.swift */; };
 		699E6C861EEE31790007ED8B /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 699E6C851EEE31790007ED8B /* WaterfallLayout.swift */; };
+		8F355AD7243CCF6B002C0224 /* protocolVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F355AD6243CCF6B002C0224 /* protocolVC.swift */; };
+		8F3E6FA2243F76B00093B1BB /* ThreadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3E6FA1243F76B00093B1BB /* ThreadVC.swift */; };
 		8F43255A242CFC9600987FFE /* StackQueueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F432559242CFC9600987FFE /* StackQueueVC.swift */; };
+		8F93ED972447593F0038EB32 /* MoreOtherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F93ED962447593F0038EB32 /* MoreOtherVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -139,7 +142,10 @@
 		699E6C811EEE2C9F0007ED8B /* Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		699E6C831EEE2D3C0007ED8B /* FlowChildVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlowChildVC.swift; sourceTree = "<group>"; };
 		699E6C851EEE31790007ED8B /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
+		8F355AD6243CCF6B002C0224 /* protocolVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = protocolVC.swift; sourceTree = "<group>"; };
+		8F3E6FA1243F76B00093B1BB /* ThreadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreadVC.swift; sourceTree = "<group>"; };
 		8F432559242CFC9600987FFE /* StackQueueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackQueueVC.swift; sourceTree = "<group>"; };
+		8F93ED962447593F0038EB32 /* MoreOtherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreOtherVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +190,9 @@
 		6915E2921ED578E100134C7D /* FBTSwift */ = {
 			isa = PBXGroup;
 			children = (
+				8F93ED952447591C0038EB32 /* 21.其他 */,
+				8F3E6FA0243F769B0093B1BB /* 20.线程 */,
+				8F355AD5243CCF52002C0224 /* 19.协议 */,
 				8F432558242CFC0500987FFE /* 18.栈和队列 */,
 				699E6C681EEE2BAD0007ED8B /* 17.分栏控制器+瀑布流布局 */,
 				6960C1EA1EE1472300F832E3 /* 16.获取设备的所有信息打印 */,
@@ -428,6 +437,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8F355AD5243CCF52002C0224 /* 19.协议 */ = {
+			isa = PBXGroup;
+			children = (
+				8F355AD6243CCF6B002C0224 /* protocolVC.swift */,
+			);
+			path = "19.协议";
+			sourceTree = "<group>";
+		};
+		8F3E6FA0243F769B0093B1BB /* 20.线程 */ = {
+			isa = PBXGroup;
+			children = (
+				8F3E6FA1243F76B00093B1BB /* ThreadVC.swift */,
+			);
+			path = "20.线程";
+			sourceTree = "<group>";
+		};
 		8F432558242CFC0500987FFE /* 18.栈和队列 */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +460,15 @@
 			);
 			path = "18.栈和队列";
 			sourceTree = "<group>";
+		};
+		8F93ED952447591C0038EB32 /* 21.其他 */ = {
+			isa = PBXGroup;
+			children = (
+				8F93ED962447593F0038EB32 /* MoreOtherVC.swift */,
+			);
+			name = "21.其他";
+			path = "FBTSwift/21.其他";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -589,15 +623,18 @@
 				695164691ED6ADBC002B2701 /* Shape.swift in Sources */,
 				695164671ED6ADBC002B2701 /* PropertyShape.swift in Sources */,
 				698640F91ED96102007566F9 /* NewPointAndModifierVC.swift in Sources */,
+				8F93ED972447593F0038EB32 /* MoreOtherVC.swift in Sources */,
 				697480861ED80E7B00A4A928 /* CollectionViewVC.swift in Sources */,
 				699E6C791EEE2BD10007ED8B /* HYPageCollectionView.swift in Sources */,
 				8F43255A242CFC9600987FFE /* StackQueueVC.swift in Sources */,
+				8F3E6FA2243F76B00093B1BB /* ThreadVC.swift in Sources */,
 				6974807F1ED7FEB900A4A928 /* RowHeightCell.swift in Sources */,
 				6960B3201EDE5C0900E68A9D /* PersonOne.swift in Sources */,
 				6951646B1ED6AE07002B2701 /* TableViewVC.swift in Sources */,
 				695164861ED6DBBE002B2701 /* ScrollViewSubTwoView.swift in Sources */,
 				699E6C7B1EEE2BD10007ED8B /* HYTitleStyle.swift in Sources */,
 				6974807C1ED7FC2B00A4A928 /* TableViewRowHeightVC.swift in Sources */,
+				8F355AD7243CCF6B002C0224 /* protocolVC.swift in Sources */,
 				6967E4F31EE02C9D0020F544 /* SwiftHttpTool.swift in Sources */,
 				699E6C711EEE2BAD0007ED8B /* HYContentView.swift in Sources */,
 				6960C1E71EE1435700F832E3 /* BViewController.swift in Sources */,

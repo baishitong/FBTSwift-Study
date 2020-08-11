@@ -27,13 +27,16 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
                                "15：提示框Action和Present控制器",
                                "16：获取设备的所有信息打印",
                                "17：分栏控制器+瀑布流布局",
-                               "18：栈和队列"]
+                               "18：栈和队列",
+                               "19：协议",
+                               "20：线程",
+                               "21：其他",]
     
     let tableView = UITableView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "冯柏通的Swift3.0的学习"
+        self.title = "冯柏通的Swift5的学习"
         setupTableView()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -118,6 +121,16 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
         case 17:
             let stackVC = StackQueueVC()
             self.navigationController?.pushViewController(stackVC, animated: true)
+        case 18:
+            let delegateVC = protocolVC()
+            self.navigationController?.pushViewController(delegateVC, animated: true)
+        case 19:
+            let threadVC = ThreadVC()
+            self.navigationController?.pushViewController(threadVC, animated: true)
+        case 20:
+            let otherVC = MoreOtherVC()
+            self.navigationController?.pushViewController(otherVC, animated: true)
+            
         default:
             print("暂无")
         }
